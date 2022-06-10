@@ -10,13 +10,18 @@ html {
 
 /* thanh taskbar */
 header{
-    background-color: #83BD75;
+    background-color: #E9EFC0;
     color:black;
     width:100%;
     top: 0;
     position: sticky;
     left: 0;
     z-index: 1;
+    border-top: 5px solid #4E944F;
+}
+
+.active {
+    background-color: #4E944F;
 }
 
 .navbar{
