@@ -91,7 +91,7 @@ function startTime() {
   sec = checkTime(sec);
   document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
   
-  let months = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1'];
+  let months = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'];
   let days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
   let curWeekDay = days[today.getDay()];
   let curDay = today.getDate();
