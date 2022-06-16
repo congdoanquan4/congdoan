@@ -78,7 +78,7 @@ a{
     text-align: center;
     background: linear-gradient(-45deg, #4E944F, #83BD75, #B4E197, #E9EFC0);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 7s ease infinite;
 }
 
 .header h1 {
