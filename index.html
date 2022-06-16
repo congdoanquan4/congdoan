@@ -10,22 +10,58 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- thanh taskbar -->
-    <header>
-        <nav class="navbar">
+<body onload="startTime()">
+    
+    <!-- <header>
+        <nav class="topnav">
             <div id="titleNav">
                 <a href="./index.html" class="active">Trang chủ</a>
-                <a href="./thongtin/thongtin.html">thông tin</a>
+                <a href="./thongtin/thongtin.html">Tin Tức</a>
                 <a href=" ">biểu quyết</a>
                 <a href=" ">hỏi đáp</a>
             </div>
         </nav>
-    </header>
-    <!-- nút quay lại đầu trang  -->
+    </header> -->
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="fa-solid fa-angles-up"></i>
     </button>
+    
+    
+
+
+    <div class="header">
+        <h1>Công đoàn quận 4</h1>
+    </div>
+    <div class="topnav">
+        <a href="./index.html" class="active">Trang chủ</a>
+        <a href="./Tintuc/tintuc.html">Tin Tức</a>
+        <a href=" ">biểu quyết</a>
+        <a href=" ">hỏi đáp</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                
+            </div>
+            <!-- card -->
+        </div>
+        <!-- left column -->
+        <div class="rightcolumn">
+            <div class="card" id="clockdate" >
+                <div class="clockdate-wrapper">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                  </div>
+            </div>
+        </div>
+        <!-- right column-->
+    </div>
+    <!-- row -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

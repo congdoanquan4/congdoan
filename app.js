@@ -34,19 +34,19 @@ let thongTinArray = [
 ]
 
 // chèn thông tin vô trang thông tin
-let contentThongTin = document.getElementById("content-thongtin")
-function renderThongTin() {
-  for (let i of thongTinArray){
-    contentThongTin.innerHTML += `
-      <button class="heading-container" class="tablinks" onclick="openContent(event, '${i.num}' )" >
-          <a class="content" >
-              <img src="${i.img}" alt="">
-              <p>${i.name}</p>
-          </a>
-      </button>
-    `
-  }
-}
+// let contentThongTin = document.getElementById("content-thongtin")
+// function renderThongTin() {
+//   for (let i of thongTinArray){
+//     contentThongTin.innerHTML += `
+//       <button class="heading-container" class="tablinks" onclick="openContent(event, '${i.num}' )" >
+//           <a class="content" >
+//               <img src="${i.img}" alt="">
+//               <p>${i.name}</p>
+//           </a>
+//       </button>
+//     `
+//   }
+// }
 renderThongTin();
 
 // hiện thông tin của mục lên trong trang 
@@ -74,4 +74,37 @@ function renderThongTinContent() {
     </div>
     `
   }
+}
+
+// clock 
+function startTime() {
+  let today = new Date();
+  let hr = today.getHours();
+  let min = today.getMinutes();
+  let sec = today.getSeconds();
+  ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+  hr = (hr == 0) ? 12 : hr;
+  hr = (hr > 12) ? hr - 12 : hr;
+  //Add a zero in front of numbers<10
+  hr = checkTime(hr);
+  min = checkTime(min);
+  sec = checkTime(sec);
+  document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+  
+  let months = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1', 'Tháng 1'];
+  let days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+  let curWeekDay = days[today.getDay()];
+  let curDay = today.getDate();
+  let curMonth = months[today.getMonth()];
+  let curYear = today.getFullYear();
+  let date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+  document.getElementById("date").innerHTML = date;
+  
+  let time = setTimeout(function(){ startTime() }, 500);
+}
+function checkTime(i) {
+  if (i < 10) {
+      i = "0" + i;
+  }
+  return i;
 }
