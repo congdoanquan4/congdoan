@@ -17,13 +17,13 @@ function topFunction() {
 // array thông tin 
 let thongTinArray = [
   {
-    imgThumbnail: "img/HTTCNQ4/thumbnail.png",
+    imgThumbnail: "img/HTTCNQ4/thumbnail.jpg",
     name:"Hội thao Tháng Công nhân Quận 4 năm 2022",
     num:"HTTCNQ4",
     content: ["1.mp4", "2.mp4", "3.mp4"],
   },
   {
-    imgThumbnail: "img/PT22/thumbnail.png",
+    imgThumbnail: "img/PT22/thumbnail.jpg",
     name:"Phan thiết 2022",
     num:"PT22",
   },
@@ -112,12 +112,23 @@ function direct(page) {
 
 // hiện thị trong trang thông tin 
 let title = document.getElementById("title")
+let imgContainer = document.getElementById("img-container")
 let pageName = localStorage.getItem("currentPage");
+let videoFormat = "mp4"
 renderPage(pageName);
 function renderPage(name) {
   for (let i = 0; i < thongTinArray.length; i++) {
     if (name == thongTinArray[i].num){
       title.innerHTML = thongTinArray[i].name
+      for(let a of thongTinArray[i].content){
+        if (thongTinArray[i].content[a].includes(videoFormat)){
+          imgContainer.innerHTML += `
+            <video src="img/"></video>
+          `
+        }else{
+          
+        }
+      }
     }
   }
 }
