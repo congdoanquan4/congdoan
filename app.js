@@ -19,22 +19,23 @@ let thongTinArray = [
   {
     imgThumbnail: "img/HTTCNQ4/thumbnail.png",
     name:"Hội thao Tháng Công nhân Quận 4 năm 2022",
-    num:"HTTCNQ4"
+    num:"HTTCNQ4",
+    content: ["1.mp4", "2.mp4", "3.mp4"],
   },
   {
     imgThumbnail: "img/PT22/thumbnail.png",
     name:"Phan thiết 2022",
-    num:"PT22"
+    num:"PT22",
   },
   {
     imgThumbnail: "img/HBNDC2122/thumbnail.jpg",
     name:"Học bổng Nguyễn Đức Cảnh 2021-2022",
-    num:"HBNDC2122"
+    num:"HBNDC2122",
   },
   {
     imgThumbnail: "img/SHCD/thumbnail.jpg",
     name:"Sinh hoạt công đoàn",
-    num:"SHCD"
+    num:"SHCD",
   },  
 ]
 
@@ -89,15 +90,34 @@ function checkTime(i) {
 
 // hiện thị từng mục trong trang chủ
 let post = document.getElementById("post-container");
-function renderPost(){
-  for(let i of thongTinArray) {
-    post.innerHTML += `
-    <div class="post">
-      <img class="img" src="${i.imgThumbnail}"Thumbnail
-                        alt="">
-      <p class="post-title">${i.name}</p>
-    </div>
-    `
-  };
+if(post != null) {
+    function renderPost(){
+      for(let i of thongTinArray) {
+        post.innerHTML += `
+        <a class="post" onclick='direct("${i.num}")'>
+          <img class="img" src="${i.imgThumbnail}" alt="">
+          <p class="post-title">${i.name}</p>
+        </a>
+        `
+      };
+    }
+    renderPost();
+};
+
+// đẫn vào trong thông tin của từng mục đã định sẵn
+function direct(page) {
+  localStorage.setItem("currentPage", page);
+  window.location.replace("./thongtin/thongtin.html");
 }
-renderPost();
+
+// hiện thị trong trang thông tin 
+let title = document.getElementById("title")
+let pageName = localStorage.getItem("currentPage");
+renderPage(pageName);
+function renderPage(name) {
+  for (let i = 0; i < thongTinArray.length; i++) {
+    if (name == thongTinArray[i].num){
+      title.innerHTML = thongTinArray[i].name
+    }
+  }
+}

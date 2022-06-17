@@ -172,13 +172,14 @@ a{
 
 .post {
     width: calc(50% - 20px);
-    max-height: 660px;
     margin: 0 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #B4E197;
     padding: 2px;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+    text-decoration: none;
+    color: black;
 }
 
 .post:nth-child(n+3) {
@@ -188,18 +189,27 @@ a{
     border-radius: 5px;
     background-color: #B4E197;
     padding: 2px;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+    text-decoration: none;
+    color: black;
+
 }
 
 .post:hover{
     /* background-color: #4E944F; */
-    box-shadow: inset 600px 0 0 0 #4E944F;
+    box-shadow: inset 600px  0 0 0 #4E944F;
 }
 
 .post img {
     width: 100%;
     border-radius: 5px;
+    /* display: none; */
 }
+
+/* .post:hover .img{
+    display: block;
+    transition: 10s;
+} */
 
 .post p {
     font-size: 28px;
