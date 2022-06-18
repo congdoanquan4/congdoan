@@ -20,7 +20,7 @@ let thongTinArray = [
     imgThumbnail: "img/HTTCNQ4/thumbnail.jpg",
     name:"Hội thao Tháng Công nhân Quận 4 năm 2022",
     num:"HTTCNQ4",
-    content: ["1.mp4", "2.mp4", "3.mp4"],
+    content: ["1.mp4","2.mp4","3.mp4"],
   },
   {
     imgThumbnail: "img/PT22/thumbnail.jpg",
@@ -33,10 +33,29 @@ let thongTinArray = [
     num:"HBNDC2122",
   },
   {
-    imgThumbnail: "img/SHCD/thumbnail.jpg",
-    name:"Sinh hoạt công đoàn",
-    num:"SHCD",
-  },  
+    imgThumbnail: "img/DHCD19-24/thumbnail.jpg",
+    name:"Đại hội công đoàn nhiệm kì 2019-2024",
+    num:"DHCD19-24",
+    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg"],
+  },
+  {
+    imgThumbnail: "img/HX20-21/thumbnail.jpg",
+    name:"Hội xuân 2020-2021",
+    num:"HX20-21",
+    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"],
+  },
+  {
+    imgThumbnail: "img/TKCTĐ19/thumbnail.jpg",
+    name:"Tổng kết công tác đảng năm 2019",
+    num:"TKCTĐ19",
+    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"],
+  },
+  {
+    imgThumbnail: "img/HNTDNNT2018/thumbnail.jpg",
+    name:"Hội nghị tuyên dương người nộp thuế năm 2018",
+    num:"HNTDNNT2018",
+    content: ["phatbieu1.jpg","phatbieu2.jpg","phatbieu3.jpg","tuyenduong1.jpg","tuyenduong2.jpg","tuyenduong3.jpg","moinguoi1.jpg","moinguoi2.jpg"],
+  },
 ]
 
 // chèn thông tin vô trang thông tin
