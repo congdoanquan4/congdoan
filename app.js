@@ -1,6 +1,6 @@
 //nút quay về đầu trang
 let mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -18,43 +18,43 @@ function topFunction() {
 let thongTinArray = [
   {
     imgThumbnail: "img/HTTCNQ4/thumbnail.jpg",
-    name:"Hội thao Tháng Công nhân Quận 4 năm 2022",
-    num:"HTTCNQ4",
-    content: ["1.mp4","2.mp4","3.mp4"],
+    name: "Hội thao Tháng Công nhân Quận 4 năm 2022",
+    num: "HTTCNQ4",
+    "content": ["1.mp4", "2.mp4", "3.mp4"],
   },
   {
     imgThumbnail: "img/PT22/thumbnail.jpg",
-    name:"Phan thiết 2022",
-    num:"PT22",
+    name: "Phan thiết 2022",
+    num: "PT22",
   },
   {
     imgThumbnail: "img/HBNDC2122/thumbnail.jpg",
-    name:"Học bổng Nguyễn Đức Cảnh 2021-2022",
-    num:"HBNDC2122",
+    name: "Học bổng Nguyễn Đức Cảnh 2021-2022",
+    num: "HBNDC2122",
   },
   {
     imgThumbnail: "img/DHCD19-24/thumbnail.jpg",
-    name:"Đại hội công đoàn nhiệm kì 2019-2024",
-    num:"DHCD19-24",
-    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg"],
+    name: "Đại hội công đoàn nhiệm kì 2019-2024",
+    num: "DHCD19-24",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg"],
   },
   {
     imgThumbnail: "img/HX20-21/thumbnail.jpg",
-    name:"Hội xuân 2020-2021",
-    num:"HX20-21",
-    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"],
+    name: "Hội xuân 2020-2021",
+    num: "HX20-21",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg"],
   },
   {
     imgThumbnail: "img/TKCTĐ19/thumbnail.jpg",
-    name:"Tổng kết công tác đảng năm 2019",
-    num:"TKCTĐ19",
-    content: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"],
+    name: "Tổng kết công tác đảng năm 2019",
+    num: "TKCTĐ19",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg"],
   },
   {
     imgThumbnail: "img/HNTDNNT2018/thumbnail.jpg",
-    name:"Hội nghị tuyên dương người nộp thuế năm 2018",
-    num:"HNTDNNT2018",
-    content: ["phatbieu1.jpg","phatbieu2.jpg","phatbieu3.jpg","tuyenduong1.jpg","tuyenduong2.jpg","tuyenduong3.jpg","moinguoi1.jpg","moinguoi2.jpg"],
+    name: "Hội nghị tuyên dương người nộp thuế năm 2018",
+    num: "HNTDNNT2018",
+    "content": ["phatbieu1.jpg", "phatbieu2.jpg", "phatbieu3.jpg", "tuyenduong1.jpg", "tuyenduong2.jpg", "tuyenduong3.jpg", "moinguoi1.jpg", "moinguoi2.jpg"],
   },
 ]
 
@@ -88,39 +88,39 @@ function startTime() {
   min = checkTime(min);
   sec = checkTime(sec);
   document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
-  
+
   let months = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'];
   let days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
   let curWeekDay = days[today.getDay()];
   let curDay = today.getDate();
   let curMonth = months[today.getMonth()];
   let curYear = today.getFullYear();
-  let date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+  let date = curWeekDay + ", " + curDay + " " + curMonth + " " + curYear;
   document.getElementById("date").innerHTML = date;
-  
-  let time = setTimeout(function(){ startTime() }, 500);
+
+  let time = setTimeout(function () { startTime() }, 500);
 }
 function checkTime(i) {
   if (i < 10) {
-      i = "0" + i;
+    i = "0" + i;
   }
   return i;
 }
 
 // hiện thị từng mục trong trang chủ
 let post = document.getElementById("post-container");
-if(post != null) {
-    function renderPost(){
-      for(let i of thongTinArray) {
-        post.innerHTML += `
+if (post != null) {
+  function renderPost() {
+    for (let i of thongTinArray) {
+      post.innerHTML += `
         <a class="post" onclick='direct("${i.num}")'>
           <img class="img" src="${i.imgThumbnail}" alt="">
           <p class="post-title">${i.name}</p>
         </a>
         `
-      };
-    }
-    renderPost();
+    };
+  }
+  renderPost();
 };
 
 // đẫn vào trong thông tin của từng mục đã định sẵn
@@ -137,17 +137,23 @@ let videoFormat = "mp4"
 renderPage(pageName);
 function renderPage(name) {
   for (let i = 0; i < thongTinArray.length; i++) {
-    if (name == thongTinArray[i].num){
-      title.innerHTML = thongTinArray[i].name
-      for(let a of thongTinArray[i].content){
-        if (thongTinArray[i].content[a].includes(videoFormat)){
+    if (name == thongTinArray[i].num) {
+      title.innerHTML += thongTinArray[i].name
+      console.log(thongTinArray[i].name)
+      let contentArray = thongTinArray[i].content
+      for (let a = 0; a < contentArray.length; a++) {
+        if (contentArray[a].includes("mp4") == true) {
           imgContainer.innerHTML += `
-            <video src="img/"></video>
+            <video controls controlsList="nodownload">
+              <source src="../img/${thongTinArray[i].num}/${contentArray[a]}" type="video/mp4">
+            </video>
           `
-        }else{
-          
+        } else {
+          imgContainer.innerHTML += `
+            <img src="../img/${thongTinArray[i].num}/${contentArray[a]}"></img>
+          `
         }
       }
     }
   }
-}
+};
