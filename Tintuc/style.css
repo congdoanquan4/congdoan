@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 
@@ -79,7 +80,6 @@ a{
     background: linear-gradient(-45deg, #4E944F, #83BD75, #B4E197, #E9EFC0);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
-
 }
 
 .header h1 {
@@ -115,7 +115,7 @@ a{
     display: sticky;
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     width: 15%;
     padding: 14px 16px;
     text-decoration: none;
@@ -160,6 +160,63 @@ a{
     content: "";
     display: table;
     clear: both;
+}
+
+/* post in the left column (the first card in the right column)*/
+#post-container-tintuc {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: calc(80% - 20px);
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #B4E197;
+    padding: 2px;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .post:nth-child(n+3) {
+    width: calc(33% - 20px);
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #B4E197;
+    padding: 2px;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+    text-decoration: none;
+    color: black;
+
+} */
+
+.post:hover{
+    /* background-color: #4E944F; */
+    box-shadow: inset 110vh  0 0 0 #4E944F;
+}
+
+.post img {
+    height: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    display: none;
+}
+
+.post:hover .img{
+    display: block;
+    transition: 10s;
+}
+
+.post p {
+    font-size: 30px;
+    margin: auto;
+    margin-left: 10px;
 }
 
 /* clock */

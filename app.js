@@ -123,6 +123,22 @@ if (post != null) {
   renderPost();
 };
 
+// hiện thị từng mục trong trang tin tức
+let postTinTuc = document.getElementById("post-container-tintuc");
+if (postTinTuc != null) {
+  function renderPostTintuc() {
+    for (let i of thongTinArray) {
+      postTinTuc.innerHTML += `
+        <a class="post" onclick='direct("${i.num}")'>
+          <img class="img" src="../${i.imgThumbnail}" alt="">
+          <p class="post-title">${i.name}</p>
+        </a>
+        `
+    };
+  }
+  renderPostTintuc();
+};
+
 // đẫn vào trong thông tin của từng mục đã định sẵn
 function direct(page) {
   localStorage.setItem("currentPage", page);
