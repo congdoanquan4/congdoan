@@ -58,6 +58,12 @@ let thongTinArray = [
     num: "HNTDNNT2018",
     "content": ["phatbieu1.jpg", "phatbieu2.jpg", "phatbieu3.jpg", "tuyenduong1.jpg", "tuyenduong2.jpg", "tuyenduong3.jpg", "moinguoi1.jpg", "moinguoi2.jpg"],
   },
+    {
+    imgThumbnail: "img/NOEL2010/thumbnail.jpg",
+    name: "Noel 2010",
+    num: "NOEL2010",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"],
+  },
 ]
 
 // chèn thông tin vô trang thông tin
