@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+/* thanh taskbar */
+/* header{
+    background-color: #E9EFC0;
+    color:black;
+    width:100%;
+    top: 0;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    border-top: 5px solid #4E944F;
+}
+
+.active {
+    background-color: #4E944F;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titleNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+#titleNav a{
+    padding: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+#titleNav a:hover{
+    background-color: #B4E197;
+    border-radius: 8px;
+    color: black;
+}
+
+/* nút quay về đầu trang */
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #4E944F;
+    color: #E9EFC0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(-45deg, #4E944F, #83BD75, #B4E197, #E9EFC0);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #E9EFC0;
+    border-top: 5px solid #4E944F;
+}
+/* Syle the topnav links */
+
+.topnav a {
+    float: left;
+    display: sticky;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    width: 15%;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.active {
+    background-color: #4E944F;
+}
+/*Change color on hover*/
+
+.topnav a:hover {
+    background-color: #B4E197;
+    color: black;
+}
+/*Create 2 different size column float next to each other*/
+/*Left column*/
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    background-color: #f1f1f1;
+}
+/*Right column*/
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/*Add card efffect for articles*/
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*Clear floats after the columns*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* clock */
+.clockdate-wrapper {
+    background-color: #83BD75;
+    padding:25px;
+    max-width:330px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+    font-family: 'Dancing Script', cursive;
+}
+
+#clock{
+    background-color:#83BD75;
+    font-size:40px;
+    color:#fff;
+}
+
+#clock span {
+    /* color:#4E944F; */
+    color: #e5e633;
+    font-size: 45px;
+}
+
+#date {
+    letter-spacing:3px;
+    font-size:20px;
+    color:#fff;
+}
+
+/*Footer*/
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    display: none;
+    background-color: #4E944F;
+    margin-top: 50px;
+}
+/*Responsive layout - when the screen is less than 800px wide, make 2 columns stack on top each other */
+
+@media screen and (max-width:800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+/*Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top each other*/
+
+@media screen and (max-width:400px) {
+    .topnav a {
+        float: none;
+        width: 100%
+    }
+}

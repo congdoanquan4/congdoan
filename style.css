@@ -204,6 +204,14 @@ a{
     /* display: none; */
 }
 
+.post img {
+    display: block;
+    background-color: red;
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: inset 0px;
+        
+}
+
 /* .post:hover .img{
     display: block;
     transition: 10s;
