@@ -26,11 +26,13 @@ let thongTinArray = [
     imgThumbnail: "img/PT22/thumbnail.jpg",
     name: "Phan thiết 2022",
     num: "PT22",
+    "content": [4248873964284052894.mp4],
   },
   {
     imgThumbnail: "img/HBNDC2122/thumbnail.jpg",
     name: "Học bổng Nguyễn Đức Cảnh 2021-2022",
     num: "HBNDC2122",
+    "content": ["6.mp4", "1.jpg", "2.jpg", "3.jpg", "4.jpg"],
   },
   {
     imgThumbnail: "img/DHCD19-24/thumbnail.jpg",
