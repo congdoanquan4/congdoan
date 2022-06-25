@@ -137,7 +137,7 @@ if (postTinTuc != null) {
   function renderPostTintuc() {
     for (let i of thongTinArray) {
       postTinTuc.innerHTML += `
-        <a class="post" onclick='direct("${i.num}")'>
+        <a class="post" onclick='directBack("${i.num}")'>
           <img class="img" src="../${i.imgThumbnail}" alt="">
           <p class="post-title">${i.name}</p>
         </a>
@@ -151,6 +151,11 @@ if (postTinTuc != null) {
 function direct(page) {
   localStorage.setItem("currentPage", page);
   window.location.replace("./thongtin/thongtin.html");
+}
+
+function directBack(page) {
+  localStorage.setItem("currentPage", page);
+  window.location.replace("../thongtin/thongtin.html");
 }
 
 // hiện thị trong trang thông tin 
