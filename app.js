@@ -163,28 +163,68 @@ let title = document.getElementById("title")
 let imgContainer = document.getElementById("img-container")
 let pageName = localStorage.getItem("currentPage");
 let videoFormat = "mp4"
-renderPage(pageName);
-function renderPage(name) {
-  for (let i = 0; i < thongTinArray.length; i++) {
-    if (name == thongTinArray[i].num) {
-      title.innerHTML += thongTinArray[i].name
-      console.log(thongTinArray[i].name)
-      let contentArray = thongTinArray[i].content
-      for (let a = 0; a < contentArray.length; a++) {
-        if (contentArray[a].includes("mp4") == true) {
-          imgContainer.innerHTML += `
-            <video controls controlsList="nodownload">
-              <source src="../img/${thongTinArray[i].num}/${contentArray[a]}" type="video/mp4">
-            </video>
-          `
-        } else {
-          imgContainer.innerHTML += `
-            <img src="../img/${thongTinArray[i].num}/${contentArray[a]}"></img>
-          `
+
+if(imgContainer != null) {
+  function renderPage(name) {
+    for (let i = 0; i < thongTinArray.length; i++) {
+      if (name == thongTinArray[i].num) {
+        title.innerHTML += thongTinArray[i].name
+        console.log(thongTinArray[i].name)
+        let contentArray = thongTinArray[i].content
+        for (let a = 0; a < contentArray.length; a++) {
+          if (contentArray[a].includes("mp4") == true) {
+            imgContainer.innerHTML += `
+              <video controls controlsList="nodownload">
+                <source src="../img/${thongTinArray[i].num}/${contentArray[a]}" type="video/mp4">
+              </video>
+            `
+          } else {
+            imgContainer.innerHTML += `
+              <img src="../img/${thongTinArray[i].num}/${contentArray[a]}"></img>
+            `
+          }
         }
       }
     }
+  };
+  renderPage(pageName);
+}
+
+// hỏi đáp 
+const form = document.forms.commentsReplies;
+// Any click on <form> invokes post()
+form.onclick = postHoiDap;
+
+// Pass the event
+function postHoiDap(event) {
+  /* Reference all <fieldset>
+  (also <button>, <textarea>, etc) */
+  const field = event.currentTarget.elements;
+  // Reference the actual element clicked
+  const clicked = event.target;
+  // if element clicked has class postCom
+  if (clicked.matches('.postCom')) {
+    /* find <fieldset name="post"> and
+    insert HTML into it */
+    field.post.insertAdjacentHTML('beforeEnd', `<fieldset name='commentPost'><textarea></textarea><button class='comTxt' type='button'>Done</button></fieldset>`);
+    // Otherwise if clicked element has class comTxt
+  } else if (clicked.matches('.comTxt')) {
+    /* find the clicked element's element
+    that is right before it and get it's text */
+    const text = clicked.previousElementSibling.value;
+    /* find <fieldset name='comments'> and insert HTML */
+    field.comments.insertAdjacentHTML('afterBegin', `<fieldset>${text}<button class='postRep' type='button'>Reply</button><ul></ul></fieldset>`);
+    // Remove <fieldset name='commentPost'>
+    field.commentPost.remove();
+  } else if (clicked.matches('.postRep')) {
+    clicked.insertAdjacentHTML('afterEnd', `<ul><textarea></textarea><button class='repTxt' type='button'>Done</button></ul>`);
+  } else if (clicked.matches('.repTxt')) {
+    const text = clicked.previousElementSibling.value;
+    const list = clicked.parentElement;
+    list.insertAdjacentHTML('afterBegin', `<li>${text}<button class='postRep' type='button'>Reply</button></li>`);
+    clicked.previousElementSibling.remove();
+    clicked.remove();
+  } else {
+    return false;
   }
-};
-
-
+}
