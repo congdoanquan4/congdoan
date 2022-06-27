@@ -156,10 +156,11 @@ a{
 }
 
 /* câu hỏi  */
-form button {
-    display: block;
-    margin-left: 25%;
-  }
+iframe {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+}
 
 /*Clear floats after the columns*/
 .row:after {
