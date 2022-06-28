@@ -1,206 +1,245 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* nút quay về đầu trang */
-#myBtn{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 30px;
-    border: none;
-    outline: none;
-    background-color: #4E944F;
-    color: #E9EFC0;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #4e944f;
+  color: #e9efc0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .header {
-    padding: 30px;
-    text-align: center;
-    background: linear-gradient(-45deg, #4E944F, #83BD75, #B4E197, #E9EFC0);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(-45deg, #4e944f, #83bd75, #b4e197, #e9efc0);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
 }
 
 .header h1 {
-    font-size: 50px;
-    text-transform: uppercase;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Style the top navigation bar */
 
 .topnav {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: #E9EFC0;
-    border-top: 5px solid #4E944F;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e9efc0;
+  border-top: 5px solid #4e944f;
+  z-index: 1000;
 }
 /* Syle the topnav links */
 
 .topnav a {
-    float: left;
-    display: sticky;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    width: 15%;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: capitalize;
+  float: left;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  width: 15%;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .active {
-    background-color: #4E944F;
+  background-color: #4e944f;
 }
 /*Change color on hover*/
 
 .topnav a:hover {
-    background-color: #B4E197;
-    color: black;
+  background-color: #b4e197;
+  color: black;
 }
 /*Create 2 different size column float next to each other*/
 /*Left column*/
 
 .leftcolumn {
-    float: left;
-    width: 75%;
-    background-color: #f1f1f1;
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
 }
 
 /* Content in the left column*/
 .leftcolumn .card .title {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .leftcolumn .card .img-container {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.leftcolumn .card .img-container div {
+    width: 85%;
 }
 
 .leftcolumn .card .img-container img {
-    margin: 10px 0;
-    width: 80%;
-    border: dashed 3px #B4E197;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  border: dashed 3px #b4e197;
 }
 
 .leftcolumn .card .img-container img:hover {
-    margin: 10px 0;
-    width: 80%;
-    border: solid 3px #4E944F;
-    border-radius: 8px;
+  border: solid 3px #4e944f;
+  border-radius: 8px;
 }
 
 .leftcolumn .card .img-container video {
-    margin: 10px 0;
-    width: 80%;
-    border-radius: 8px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
 }
 
 /*Right column*/
 .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    /* padding: 20px; */
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  /* padding: 20px; */
 }
 
 /*Add card efffect for articles*/
 .card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.paragraph {
+  font-size:25px;
+  margin: 10px 20px;
+  text-align: justify;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  position: absolute;
+  right: 0px;
+}
+
+.prev {
+  position: absolute;
+  left: 0px;
 }
 
 /*Clear floats after the columns*/
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* clock */
 .clockdate-wrapper {
-    background-color: #83BD75;
-    padding:25px;
-    max-width:330px;
-    width:100%;
-    text-align:center;
-    border-radius:5px;
-    margin:0 auto;
-    font-family: 'Dancing Script', cursive;
+  background-color: #83bd75;
+  padding: 25px;
+  max-width: 330px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
 }
 
-#clock{
-    background-color:#83BD75;
-    font-size:40px;
-    color:#fff;
+#clock {
+  background-color: #83bd75;
+  font-size: 40px;
+  color: #fff;
 }
 
 #clock span {
-    /* color:#4E944F; */
-    color: #e5e633;
-    font-size: 45px;
+  /* color:#4E944F; */
+  color: #e5e633;
+  font-size: 45px;
 }
 
 #date {
-    letter-spacing:3px;
-    font-size:20px;
-    color:#fff;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
 }
 
 /*Footer*/
 
 .footer {
-    padding: 20px;
-    text-align: center;
-    display: none;
-    background-color: #4E944F;
-    margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  background-color: #4e944f;
+  margin-top: 50px;
 }
 /*Responsive layout - when the screen is less than 800px wide, make 2 columns stack on top each other */
 
-@media screen and (max-width:800px) {
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 /*Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top each other*/
 
-@media screen and (max-width:400px) {
-    .topnav a {
-        float: none;
-        width: 100%
-    }
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }

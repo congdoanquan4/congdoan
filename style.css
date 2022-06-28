@@ -6,55 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-
-}
-
-
-/* thanh taskbar */
-/* header{
-    background-color: #E9EFC0;
-    color:black;
-    width:100%;
-    top: 0;
-    position: sticky;
-    left: 0;
-    z-index: 1;
-    border-top: 5px solid #4E944F;
-}
-
-.active {
-    background-color: #4E944F;
-}
-
-.navbar{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#titleNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-}
-
-#titleNav a{
-    padding: 8px;
-    cursor: pointer;
-    font-size: 25px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    text-transform: capitalize;
-}
-
-#titleNav a:hover{
-    background-color: #B4E197;
-    border-radius: 8px;
-    color: black;
 }
 
 /* nút quay về đầu trang */
@@ -103,10 +54,13 @@ a{
 
 .topnav {
     overflow: hidden;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
-    background-color: #E9EFC0;
-    border-top: 5px solid #4E944F;
+    background-color: #e9efc0;
+    border-top: 5px solid #4e944f;
+    z-index: 1000;
 }
 /* Syle the topnav links */
 
