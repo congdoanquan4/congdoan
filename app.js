@@ -55,6 +55,12 @@ let thongTinArray = [
     name: "Hiến máu năm 2021",
     num: "HM",
     "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "paragraph": [
+      "Hàng năm; Hội Chữ thập đỏ - Liên đoàn Lao động Quận 4 phối hợp cùng Trung tâm Hiến máu Nhân đạo Tp. Hồ Chí Minh tổ chức ngày Hội hiến máu Tình nguyện cho Cán bộ - công chức, Đoàn viên Công đoàn, Người lao động từ các phòng ban đến cơ sở. Công chức CCTQ4 rất nhiệt tình tham gia ngày hội này.",
+      "Đây là một trong những hoạt động xã hội mang ý nghĩa nhân đạo to lớn, qua đó thể hiện tinh thần tương thân tương ái, tiếp sức cho người bệnh khi cần truyền máu vượt qua hiểm nghèo.",
+      "Những tấm lòng cao cả, những giọt máu trách nhiệm và nghĩa tình càng tô thắm thêm truyền thống nhân ái của dân tộc Việt Nam ta. Thông qua ngày hội hiến máu mỗi cán bộ, đoàn viên, công nhân, viên chức, lao động nhận thức rõ hơn ý nghĩa và tầm quan trọng của mỗi “giọt hồng” đó chính là “mỗi giọt máu cho đi – một cuộc đời ở lại”, “Hiến máu cứu người – xin đừng thờ ơ”.",
+      "Năm 2021, CBCC CCTQ4 tham gia chương trình hiến máu tình nguyện với phương châm “Hiến máu an toàn, chung tay đẩy lùi Covid-19. Chương trình hiến máu tình nguyện năm nay diễn ra trong thời điểm tình hình dịch Covid-19 kéo dài và diễn biến phức tạp trên địa bàn tỉnh, nên tất cả các tình nguyện viên tham gia đều được Test nhanh kháng nguyên SARS-CoV-2 trước khi tham gia hiến máu. Trong quá trình tham gia hiến máu các tình nguyện viên luôn thực hiện nghiêm túc nguyên tắc 5k của Bộ Y tế. Với tinh thần tương thân, tương ái, CBCC CCTQ4 tiếp tục sẵn sàng tham hiến máu tình nguyện góp phần đảm bảo nguồn máu cung cấp cho cấp cứu và điều trị trước thực trạng khan hiếm máu vì ảnh hưởng của COVID-19",
+    ]
   },
   {
     imgThumbnail: "img/HX20-21/thumbnail.jpg",
