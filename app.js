@@ -107,6 +107,7 @@ let thongTinArray = [
   },
 ]
 
+
 // clock 
 function startTime() {
   let today = new Date();
