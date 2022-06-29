@@ -51,6 +51,12 @@ let thongTinArray = [
     "paragraph": []
   },
   {
+    imgThumbnail: "img/HM/thumbnail.jpg",
+    name: "Hiến máu năm 2021",
+    num: "HM",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+  },
+  {
     imgThumbnail: "img/HX20-21/thumbnail.jpg",
     name: "Hội xuân 2020-2021",
     num: "HX20-21",
