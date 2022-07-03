@@ -3,7 +3,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -117,7 +117,6 @@ function startTime() {
   ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
   hr = (hr == 0) ? 12 : hr;
   hr = (hr > 12) ? hr - 12 : hr;
-  //Add a zero in front of numbers<10
   hr = checkTime(hr);
   min = checkTime(min);
   sec = checkTime(sec);
@@ -236,12 +235,14 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if(slides !== null){
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
   }
-  slides[slideIndex - 1].style.display = "block";
 }
 
 // chữ trong trang thông tin
@@ -260,4 +261,14 @@ if (contentContainer != null) {
     }
   };
   renderContent(pageName);
+}
+
+// responsive
+function myFunction() {
+  let x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
