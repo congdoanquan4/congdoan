@@ -111,14 +111,15 @@ html {
   position: relative;
 }
 
-.leftcolumn .card .img-container div {
-    width: 85%;
+.leftcolumn .card .img-container .mySlide {
+    width: 95%;
+    display: flex;
+    justify-content: center;
 }
 
 .leftcolumn .card .img-container img {
-  width: 100%;
   margin: auto;
-  height: auto;
+  max-height: 550px;
   border: dashed 3px #b4e197;
 }
 
