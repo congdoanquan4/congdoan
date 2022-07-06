@@ -102,7 +102,7 @@ html {
 }
 
 .leftcolumn .card .img-container {
-  padding: 10px;
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,15 +112,16 @@ html {
 }
 
 .leftcolumn .card .img-container .mySlide {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .leftcolumn .card .img-container img {
   margin: auto;
-  max-height: 550px;
   border: dashed 3px #b4e197;
+  height: 600px;
+  max-width: 100%;
 }
 
 .leftcolumn .card .img-container img:hover {
@@ -161,7 +162,7 @@ html {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 150px;
+  top: 50%;
   width: auto;
   padding: 16px;
   background-color: black;
@@ -321,7 +322,8 @@ html {
       font-size: 30px;
   }
 
-  img{
+  .leftcolumn .card .img-container img{
+    height: 300px;
     max-width: 95%;
   }
 }
