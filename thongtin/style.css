@@ -161,7 +161,7 @@ html {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 150px;
   width: auto;
   padding: 16px;
   background-color: black;
@@ -319,6 +319,10 @@ html {
 
   .header h1 {
       font-size: 30px;
+  }
+
+  img{
+    max-width: 95%;
   }
 }
 
