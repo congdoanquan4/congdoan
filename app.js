@@ -27,7 +27,7 @@ let thongTinArray = [
     imgThumbnail: "img/PT22/thumbnail.jpg",
     name: "Phan thiết 2022",
     num: "PT22",
-    "content": ["1-video.mp4","1.jpg", "2.jpg", "3.jpg", "4.jpg","5.jpg","6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg"],
+    "content": ["1-video.mp4", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg"],
     "paragraph": []
   },
   {
@@ -235,7 +235,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if(slides !== null){
+  if (slides !== null) {
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -272,3 +272,4 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
