@@ -354,6 +354,12 @@ input[type="checkbox"] {
   color: #fff;
 }
 
+/* vote */
+iframe{
+  height: 700px;
+  width: 100%;
+}
+
 /*Footer*/
 
 .footer {
