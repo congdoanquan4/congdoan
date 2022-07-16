@@ -76,6 +76,13 @@ let thongTinArray = [
     ]
 
   },
+    {
+    imgThumbnail: "img/HNTDNNT2018/thumbnail.jpg",
+    name: "Hội nghị tuyên dương người nộp thuế năm 2020",
+    num: "HNTDNNT2018",
+    "content": ["phatbieu1.jpg", "phatbieu2.jpg", "phatbieu3.jpg", "tuyenduong1.jpg", "tuyenduong2.jpg", "tuyenduong3.jpg", "moinguoi1.jpg", "moinguoi2.jpg"],
+    "paragraph": []
+  },
   {
     imgThumbnail: "img/TKCTĐ19/thumbnail.jpg",
     name: "Tổng kết công tác đảng năm 2019",
@@ -91,13 +98,7 @@ let thongTinArray = [
       "Tiếp thu các ý kiến tham luận của các đồng chí Ủy viên Ban Chấp hành Đảng bộ CCTQ4 và các đại biểu tham dự Hội nghị, đặc biệt là ý kiến phát biểu chỉ đạo của đồng chí Cao Nhật Tựu – Phó Ban Tổ chức Quận ủy Quận 4, Hội nghị đã nhất trí Thông qua các Báo cáo Tổng kết công tác xây dựng Đảng và thi hành Điều lệ Đảng nhiệm kỳ Đại hội XII của Đảng bộ CCTQ4.",
     ]
   },
-  {
-    imgThumbnail: "img/HNTDNNT2018/thumbnail.jpg",
-    name: "Hội nghị tuyên dương người nộp thuế năm 2018",
-    num: "HNTDNNT2018",
-    "content": ["phatbieu1.jpg", "phatbieu2.jpg", "phatbieu3.jpg", "tuyenduong1.jpg", "tuyenduong2.jpg", "tuyenduong3.jpg", "moinguoi1.jpg", "moinguoi2.jpg"],
-    "paragraph": []
-  },
+
   {
     imgThumbnail: "img/NOEL2010/thumbnail.jpg",
     name: "Noel 2010",
