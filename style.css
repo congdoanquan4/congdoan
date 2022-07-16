@@ -117,24 +117,79 @@ html {
 }
 
 /* chữ  (thay đổi kế hoạch vào ngày 16 tháng 7 năm 2022) */
-.title{
+#main{
+  width: 80%;
+}
+
+.title {
   text-align: justify;
 }
 
 h2 {
   margin-top: 20px;
   text-align: justify;
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 li {
   text-align: justify;
   margin: 5px 0;
   margin-left: 5%;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    display:none;
+  }
+
+  55%{
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 4%;
+    width: 100%;
+  }
+}
+
 
 .end {
   text-align: justify;
   font-size: 20px;
+  position: relative;
+  display: inline-block;
+  animation: flip 20s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
 }
 
 /* post in the left column (the first card in the right column)*/
