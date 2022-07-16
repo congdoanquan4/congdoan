@@ -374,13 +374,13 @@ iframe{
 .footer {
   padding: 10px;
   text-align: left;
-  display: block;
+  display: flex;
+  justify-content: center;
   background-color: #4e944f;
   margin-top: 50px;
 }
 
 .footer p {
-  margin-left: 15%;
   font-size: 20px;
   font-weight: bold;
 }
