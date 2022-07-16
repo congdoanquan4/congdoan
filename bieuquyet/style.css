@@ -159,6 +159,7 @@ a{
   justify-content: center;
   background-color: #323232;
   padding: 20px;
+  height: 750px;
 }
 
 /*Clear floats after the columns*/
