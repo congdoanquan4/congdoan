@@ -153,6 +153,14 @@ a{
   margin-top: 20px;
 }
 
+/* poll */
+.poll{
+  display: flex;
+  justify-content: center;
+  background-color: #323232;
+  padding: 20px;
+}
+
 /*Clear floats after the columns*/
 .row:after {
   content: "";
