@@ -1,14 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
 }
-
 
 /* thanh taskbar */
 /* header{
@@ -58,247 +56,256 @@ a{
 }
 
 /* nút quay về đầu trang */
-#myBtn{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 30px;
-    border: none;
-    outline: none;
-    background-color: #4E944F;
-    color: #E9EFC0;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #4e944f;
+  color: #e9efc0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .header {
-    padding: 30px;
-    text-align: center;
-    background: linear-gradient(-45deg, #4E944F, #83BD75, #B4E197, #E9EFC0);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(-45deg, #4e944f, #83bd75, #b4e197, #e9efc0);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
 }
 
 .header h1 {
-    font-size: 50px;
-    text-transform: uppercase;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Style the top navigation bar */
 
 .topnav {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: #E9EFC0;
-    border-top: 5px solid #4E944F;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #e9efc0;
+  border-top: 5px solid #4e944f;
 }
 /* Syle the topnav links */
 
 .topnav a {
-    float: left;
-    display: sticky;
-    color: black;
-    text-align: center;
-    font-size: 25px;
-    width: 15%;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: capitalize;
+  float: left;
+  display: sticky;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  width: 15%;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .active {
-    background-color: #4E944F;
+  background-color: #4e944f;
 }
 /*Change color on hover*/
 
 .topnav a:hover {
-    background-color: #B4E197;
-    color: black;
+  background-color: #b4e197;
+  color: black;
 }
 /*Create 2 different size column float next to each other*/
 /*Left column*/
 
 .leftcolumn {
-    float: left;
-    width: 75%;
-    background-color: #f1f1f1;
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
 }
 /*Right column*/
 
 .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding: 20px;
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
 /*Add card efffect for articles*/
 .card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /* câu hỏi  */
 iframe {
-    width: 100%;
-    height: auto;
-    min-height: 600px;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
 }
 
 /*Clear floats after the columns*/
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* clock */
 .clockdate-wrapper {
-    background-color: #83BD75;
-    padding:25px;
-    max-width:330px;
-    width:100%;
-    text-align:center;
-    border-radius:5px;
-    margin:0 auto;
-    font-family: 'Dancing Script', cursive;
+  background-color: #83bd75;
+  padding: 25px;
+  max-width: 330px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
 }
 
-#clock{
-    background-color:#83BD75;
-    font-size:40px;
-    color:#fff;
+#clock {
+  background-color: #83bd75;
+  font-size: 40px;
+  color: #fff;
 }
 
 #clock span {
-    /* color:#4E944F; */
-    color: #e5e633;
-    font-size: 45px;
+  /* color:#4E944F; */
+  color: #e5e633;
+  font-size: 45px;
 }
 
 #date {
-    letter-spacing:3px;
-    font-size:20px;
-    color:#fff;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
 }
 
 /*Footer*/
-
 .footer {
-    padding: 20px;
-    text-align: center;
-    display: none;
-    background-color: #4E944F;
-    margin-top: 50px;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  background-color: #4e944f;
+  margin-top: 50px;
 }
-@media screen and (max-width: 820px) {
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
 
-    .topnav a.icon {
-        display: none;
-    }
+.footer p {
+  margin-left: 15%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 820px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  .topnav a.icon {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 820px) {
-    .topnav a.icon {
-        display: none;
-    }
+  .topnav a.icon {
+    display: none;
+  }
 }
 
 /*Responsive layout - when the screen is less than 800px wide, make 2 columns stack on top each other */
-@media screen and (max-width:800px) {
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 
-    .topnav a:not(:first-child) {
-        display: none;
-    }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
 
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 
-    .topnav.responsive {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .topnav.responsive .icon {
-        width: 15%;
-        height: 25%;
-        margin-left: auto;
-        display: inline-block;
-    }
+  .topnav.responsive {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav.responsive .icon {
+    width: 15%;
+    height: 25%;
+    margin-left: auto;
+    display: inline-block;
+  }
 
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-    }
-
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
 }
 /*Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top each other*/
 
-@media screen and (max-width:600px) {
-    .topnav a {
-        float: none;
-        width: 100%
-    }
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
-    .post{
-        width: 100%;
-    }
+  .post {
+    width: 100%;
+  }
 
-    .post:nth-child(n+3){
-        width: 100%;
-    }
+  .post:nth-child(n + 3) {
+    width: 100%;
+  }
 
-    .header h1 {
-        font-size: 30px;
-    }
+  .header h1 {
+    font-size: 30px;
+  }
 }
