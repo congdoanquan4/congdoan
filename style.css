@@ -130,6 +130,7 @@ h2 {
   text-align: justify;
   animation-duration: 3s;
   animation-name: slidein2;
+  color: #4e944f;
 }
 
 @keyframes slidein2 {
@@ -138,15 +139,25 @@ h2 {
     width: 300%;
   }
 
+  25%{
+    color: red;
+  }
+
+  50%{
+    color: yellow;
+  }
+
   75% {
     font-size: 300%;
     margin-left: 25%;
     width: 150%;
+    color: #4e944f;
   }
 
   to {
     margin-left: 0%;
     width: 100%;
+    color: #4e944f;
   }
 }
 
@@ -168,6 +179,7 @@ li {
   55%{
     margin-left: 100%;
     width: 300%;
+    color: #4e944f;
   }
 
   to {
