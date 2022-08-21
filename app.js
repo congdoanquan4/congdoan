@@ -17,6 +17,38 @@ function topFunction() {
 // array thông tin 
 let thongTinArray = [
   {
+    imgThumbnail: "img/DHCB2/thumbnail.jpg",
+    name: "Đại hội chi bộ lần 2 năm 2022",
+    num: "DHCB2",
+    "content": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"],
+    "paragraph": [
+    "👍👍Chi bộ 2 trực thuộc Đảng bộ CCTQ4 tổ chức đại hội điểm - Đại hội Đảng viên lần thứ XI nhiệm kỳ 2022 – 2025"
+    "Thực hiện hướng dẫn số 05-HD/BTCQU ngay 24 tháng 05 năm 2022 của Ban Tổ chức Quận ủy Quận 4 về tổ chức Đại hội Chi bộ trực thuộc Đảng bộ Chi Cục Thuế nhiệm kỳ 2022 – 2025;"
+    "Chi bộ 2 tổ chức Đại hội Đảng viên lần thứ XI nhiệm kỳ 2022 – 2025 vào ngày 10/08/2022 tại hội trường lầu 6 Chi Cục Thuế Quận 4;"
+    "Chi bộ 2 đã tổ chức Đại hội Đảng viên nhằm đánh giá kết quả thực hiện Nghị quyết Đại hội nhiệm kỳ 2020 - 2022, đề ra mục tiêu, nhiệm vụ, giải pháp cho nhiệm kỳ mới; bầu chi ủy, bầu bí thư và phó bí thư Chi bộ nhiệm kỳ 2022 - 2025."
+    "Đại hội vinh dự đón tiếp đồng chí: Nguyễn Ngọc Minh – Bí thư Đảng bộ, Chi Cục Trưởng CCTQ4, cùng các đồng chí là Bí thư Chi bộ 1, Chi bộ 3, Đại diện các đồng chí Ban chấp hành Công đoàn, Chi đoàn CCTQ4."
+    "Tổng số đảng số Chi bộ đến cuối nhiệm kỳ có 17 đảng viên; 16 chính thức và 01 dự bị; duy trì sinh hoạt đều đặn định kỳ hàng tháng và sinh hoạt chuyên đề hàng quý, từng đảng viên luôn thể hiện tốt tinh thần trách nhiệm góp ý xây dựng chi bộ."
+    "Trong nhiệm kỳ Chi bộ 2 đã được Đảng ủy Chi cục Thuế khen thưởng chi bộ đạt tiêu chuẩn “Trong sạch, vững mạnh, tiêu biểu năm 2020”."
+    "Trong nhiệm kỳ 2020 – 2022 một số tập thể, cá nhân đã được khen thưởng về việc thực hiện Chỉ thị 05-CT/TW của Bộ Chính trị về đẩy mạnh “Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh”, gồm:"
+    "- Tập thể: Chi bộ 2 (giai đoạn 2020 – 2021), Đội Kiểm tra thuế số 2 (giai đoạn 2021 – 2022),"
+    "- Cá nhân: Đ/c Tạ Quang Vinh (giai đoạn 2020 – 2021 và 2021 - 2022), Đ/c Lê Phương Hải (giai đoạn 2021 – 2022), Bùi Thị Ngọc Tiên (giai đoạn 2021 – 2022);  Đồng Thị Phương Mai (giai đoạn 2016 – 2021)."
+    "PHƯƠNG HƯỚNG VÀ MỤC TIÊU NHIỆM KỲ 2022-2025"
+    "Quyết tâm thực hiện thắng lợi Nghị quyết Đại hội Đảng bộ Chi cục Thuế nhiệm kỳ 2020 – 2025 và Nghị quyết Đại hội Chi bộ 2 nhiệm kỳ 2022 – 2025 đề ra. Phấn đấu xây dựng chi bộ đạt trong sạch, vững mạnh, các Đội chuyên môn hoàn thành tốt các nhiệm vụ được giao."
+    "Nâng cao năng lực lãnh đạo và sức chiến đấu của Chi bộ, 100% cán bộ, đảng viên hoàn thành tốt nhiệm vụ; hoàn thành chỉ tiêu kết nạp Đảng viên mới do Đảng ủy giao và Nghị quyết chi bộ đề ra, tạo sự chuyển biến tích cực, hiệu quả cao trong việc thực hiện Chỉ thị 05-CT/TW của Bộ chính trị gắn với Nghị quyết Trung ương 4 khóa XI và Nghị quyết Trung ương 4 khóa XII của Ban chấp hành Trung ương. Ngăn chặn, đẩy lùi suy thoái về tư tưởng chính trị, đạo đức lối, sống, những biểu hiện “tự diễn biến”, “tự chuyển hóa” trong nội bộ."
+    "Một số chỉ tiêu chủ yếu trong nhiệm kỳ: "   
+    "- 100% Đội chuyên môn hoàn thành xuất sắc nhiệm vụ được giao hàng năm, không có đồng chí nào vi phạm kỷ luật của Ngành."   
+    "- 100% cán bộ, đảng viên, công chức tích cực tham gia hưởng ứng các hoạt động phong trào thi đua, các hoạt động xã hội do cơ quan tổ chức."   
+    "- Phấn đấu hàng năm kết nạp ít nhất một đảng viên (chỉ tiêu cả nhiệm kỳ là 2 đảng viên). Chi bộ đạt trong sạch vững mạnh; 100% đảng viên hoàn thành tốt nhiệm vụ."   
+    "- 100% cán bộ, đảng viên, công chức chấp hành tốt nội quy cơ quan, quy định của Ngành, thể hiện tinh thần trách nhiệm trong nhiệm vụ được giao, không gây phiền hà, nhũng nhiễu người nộp thuế."   
+    "- Phấn đấu 100% cán bộ, đảng viên trong diện cán bộ quy hoạch, kế thừa tham gia các lớp học lý luận chính trị khi được phân công."   
+    "- 80% cán bộ, đảng viên có đăng ký sáng kiến, cải tiến góp phần trong việc cải cách hành chính thuế và hoàn thành nhiệm vụ được giao."   
+    "- Thực hiện 3 cuộc kiểm tra và 3 cuộc giám sát đảng viên trong nhiệm kỳ, đảm bảo nội dung tập trung vào các vấn đề có trọng tâm, đạt chất lượng."   
+    "- 100% cán bộ, đảng viên, công chức đẩy mạnh việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh theo chuyên đề hàng năm theo tinh thần Chỉ thị 05-CT/TW của Bộ Chính trị."   
+    "- 100% cán bộ, đảng viên cam kết phấn đấu, rèn luyện, giữ gìn phẩm chất chính trị, đạo đức lối sống, không có biểu hiện suy thoái, “tự diễn biến”, “tự chuyển hóa”."   
+    "Phát biểu chỉ đạo Đại hội, Nguyễn Ngọc Minh – Bí thư Đảng bộ, Chi Cục Trưởng CCTQ4 nhấn mạnh ý nghĩa, yêu cầu của đại hội điểm; mong muốn với tinh thần đoàn kết, thống nhất chi bộ sẽ tiếp tục phát huy những mặt mạnh, lãnh đạo, chỉ đạo các đảng viên hoàn thành xuất sắc các nhiệm vụ, chỉ tiêu mà Nghị quyết đại hội đã đề ra. Đồng thời, đề nghị Chi bộ cần tập trung một số nội dung trọng tâm trong công tác chính trị tư tưởng gắn với việc thực hiện Kết luận số 01-KL/TW ngày 18/5/2021 của Bộ Chính trị về tiếp tục thực hiện Chỉ thị số 05-CT/TW ngày 15/5/2016 của Bộ Chính trị khóa XII “Về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh”, chủ động đề ra các giải pháp khác"   
+    ]
+  },
+  {
     imgThumbnail: "img/HTTCNQ4/thumbnail.jpg",
     name: "Hội thao Tháng Công nhân Quận 4 năm 2022",
     num: "HTTCNQ4",
